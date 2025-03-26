@@ -302,3 +302,20 @@ git push -u origin main
 git branch -M main
 git push -u origin main
 git init
+git add .
+git commit -m "Initial commit"
+git remote set-url origin https://github.com/r-owusu/Bash-boilerplate.git
+git remote add origin https://github.com/r-owusu/Bash-boilerplate.git
+git remote -v
+git branch -M main
+git push -u origin main
+git status
+ls
+cd project
+ls
+cd website
+ls
+cd..
+cd ../..
+cd project
+cd ..
