@@ -1,0 +1,71 @@
+2025-03-25 21:08:36.980 [info] [main] Log level: Info
+2025-03-25 21:08:36.980 [info] [main] Validating found git in: "git"
+2025-03-25 21:08:36.980 [info] [main] Using git "2.43.0" from "git"
+2025-03-25 21:08:36.980 [info] [Model][doInitialScan] Initial repository scan started
+2025-03-25 21:08:36.980 [info] > git rev-parse --show-toplevel [2ms]
+2025-03-25 21:08:36.980 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2025-03-25 21:08:36.980 [info] [Model][openRepository] Opened repository: /workspace/project
+2025-03-25 21:08:36.980 [info] > git config --get commit.template [5ms]
+2025-03-25 21:08:36.980 [info] > git rev-parse --show-toplevel [7ms]
+2025-03-25 21:08:36.980 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [6ms]
+2025-03-25 21:08:36.980 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/workspace/project/.git/refs/remotes/origin/main'
+2025-03-25 21:08:36.980 [info] > git rev-parse --show-toplevel [4ms]
+2025-03-25 21:08:36.980 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-03-25 21:08:36.980 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-03-25 21:08:36.980 [info] > git status -z -uall [4ms]
+2025-03-25 21:08:36.980 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-03-25 21:08:36.980 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [6ms]
+2025-03-25 21:08:36.980 [info] > git config --get --local branch.main.vscode-merge-base [15ms]
+2025-03-25 21:08:36.980 [warning] [Git][config] git config failed: Failed to execute git
+2025-03-25 21:08:36.980 [info] > git config --get commit.template [40ms]
+2025-03-25 21:08:36.980 [info] > git reflog main --grep-reflog=branch: Created from *. [8ms]
+2025-03-25 21:08:36.980 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [5ms]
+2025-03-25 21:08:36.980 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/workspace/project/.git/refs/remotes/origin/main'
+2025-03-25 21:08:36.980 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [5ms]
+2025-03-25 21:08:36.980 [info] > git rev-parse refs/remotes/origin/main [4ms]
+2025-03-25 21:08:36.980 [info] > git status -z -uall [4ms]
+2025-03-25 21:08:36.980 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [8ms]
+2025-03-25 21:08:36.980 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2025-03-25 21:08:36.980 [info] > git config --add --local branch.main.vscode-merge-base origin/main [7ms]
+2025-03-25 21:08:36.980 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [5ms]
+2025-03-25 21:08:36.980 [info] > git config --get commit.template [7ms]
+2025-03-25 21:08:36.980 [info] > git config --get --local branch.main.vscode-merge-base [5ms]
+2025-03-25 21:08:36.980 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [3ms]
+2025-03-25 21:08:36.980 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [5ms]
+2025-03-25 21:08:36.980 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/workspace/project/.git/refs/remotes/origin/main'
+2025-03-25 21:08:36.980 [info] > git merge-base refs/heads/main refs/remotes/origin/main [3ms]
+2025-03-25 21:08:36.980 [info] > git diff --name-status -z --diff-filter=ADMR b47da2f1aefd5ecd3a04aaf48b0ac5b8b779948b...refs/remotes/origin/main [1ms]
+2025-03-25 21:08:36.980 [info] > git rev-parse refs/remotes/origin/main [13ms]
+2025-03-25 21:08:36.980 [info] > git status -z -uall [13ms]
+2025-03-25 21:08:36.981 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-03-25 21:08:38.062 [info] > git config --get commit.template [2ms]
+2025-03-25 21:08:38.086 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [6ms]
+2025-03-25 21:08:38.091 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/workspace/project/.git/refs/remotes/origin/main'
+2025-03-25 21:08:38.125 [info] > git rev-parse refs/remotes/origin/main [34ms]
+2025-03-25 21:08:38.175 [info] > git status -z -uall [40ms]
+2025-03-25 21:08:38.176 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [29ms]
+2025-03-25 21:08:41.494 [info] > git config --get --local branch.main.github-pr-owner-number [2ms]
+2025-03-25 21:08:41.494 [warning] [Git][config] git config failed: Failed to execute git
+2025-03-25 21:08:43.191 [info] > git config --get commit.template [5ms]
+2025-03-25 21:08:43.192 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-03-25 21:08:43.196 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/workspace/project/.git/refs/remotes/origin/main'
+2025-03-25 21:08:43.197 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-03-25 21:08:43.205 [info] > git status -z -uall [4ms]
+2025-03-25 21:08:43.207 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-03-25 21:17:01.327 [info] > git config --get commit.template [7ms]
+2025-03-25 21:17:01.328 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-03-25 21:17:01.332 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/workspace/project/.git/refs/remotes/origin/main'
+2025-03-25 21:17:01.334 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-03-25 21:17:01.343 [info] > git status -z -uall [5ms]
+2025-03-25 21:17:01.346 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-03-25 21:17:01.360 [info] > git merge-base refs/heads/main refs/remotes/origin/main [3ms]
+2025-03-25 21:17:01.366 [info] > git diff --name-status -z --diff-filter=ADMR b47da2f1aefd5ecd3a04aaf48b0ac5b8b779948b...refs/remotes/origin/main [2ms]
+2025-03-25 21:17:01.803 [info] > git config --get --local branch.main.github-pr-owner-number [2ms]
+2025-03-25 21:17:01.803 [warning] [Git][config] git config failed: Failed to execute git
+2025-03-25 21:17:09.476 [info] > git config --get commit.template [5ms]
+2025-03-25 21:17:09.477 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-03-25 21:17:09.481 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/workspace/project/.git/refs/remotes/origin/main'
+2025-03-25 21:17:09.483 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-03-25 21:17:09.491 [info] > git status -z -uall [5ms]
+2025-03-25 21:17:09.493 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-03-25 21:38:56.909 [info] > git check-ignore -v -z --stdin [2ms]
